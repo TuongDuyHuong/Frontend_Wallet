@@ -9,12 +9,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="@drawable/background_beach"
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_width="416dp"
+            android:layout_height="422dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +33,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/background_beach" />
+                app:srcCompat="@drawable/empty_background" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -92,13 +93,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginEnd="40dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/top_banner_background"
                 android:elevation="4dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4">
+                app:layout_constraintStart_toStartOf="parent">
 
                 <LinearLayout
 
@@ -351,9 +352,10 @@
                         android:id="@+id/txt3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="BIDV"
+                        android:text="Chuyển \ntiền"
                         android:textAlignment="center"
                         android:textColor="#2e3d6d"
+
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -386,10 +388,10 @@
 
                     <TextView
                         android:id="@+id/txt1"
-                        android:layout_width="match_parent"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
-                        android:text="MB Bank"
-                        android:textAlignment="center"
+                        android:text="Chuyển tiền\nNgân hàng"
+
                         android:textColor="#2e3d6d"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -424,7 +426,7 @@
                         android:id="@+id/txt2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Viettinbank"
+                        android:text="Thanh toán hóa đơn"
                         android:textAlignment="center"
                         android:textColor="#2e3d6d"
                         android:textStyle="bold" />
@@ -459,8 +461,8 @@
                     <TextView
                         android:id="@+id/txt11"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="BIDV"
+                        android:layout_height="40dp"
+                        android:text="Nạp tiền điện thoai"
                         android:textAlignment="center"
                         android:textColor="#2e3d6d"
                         android:textStyle="bold" />
@@ -507,7 +509,7 @@
                         android:id="@+id/txt6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="MB Bank"
+                        android:text="Du lịch/ \nĐi lại"
                         android:textAlignment="center"
                         android:textColor="#2e3d6d"
                         android:textStyle="bold" />
@@ -544,7 +546,7 @@
                         android:id="@+id/txt7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="MB Bank"
+                        android:text="Mua vé xem phim"
                         android:textAlignment="center"
                         android:textColor="#2e3d6d"
                         android:textStyle="bold" />
@@ -580,7 +582,7 @@
                         android:id="@+id/txt8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Viettinbank"
+                        android:text="Vay tiêu dùng"
                         android:textAlignment="center"
                         android:textColor="#2e3d6d"
                         android:textStyle="bold" />
@@ -616,7 +618,7 @@
                         android:id="@+id/txt9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="BIDV"
+                        android:text="Mua vé máy bay"
                         android:textAlignment="center"
                         android:textColor="#2e3d6d"
                         android:textStyle="bold" />

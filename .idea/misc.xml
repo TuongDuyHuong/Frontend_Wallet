@@ -8,7 +8,9 @@
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/drawable/background_app.xml" value="0.244" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/drawable/btn_background2.xml" value="0.178" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/drawable/btn_backgroundempty.xml" value="0.178" />
+        <entry key="..\:/Android Studio/wallet3/app/src/main/res/drawable/otp_background.xml" value="0.178" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/drawable/wallet_background.xml" value="0.121" />
+        <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/activity_empty.xml" value="0.24895833333333334" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/activity_recharge.xml" value="0.25" />
@@ -25,6 +27,7 @@
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_scanqr.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_transaction_history.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/layout_endow_list.xml" value="0.25" />
+        <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/otp_dialog.xml" value="0.24895833333333334" />
         <entry key="..\:/Android Studio/wallet5/app/src/main/res/drawable-ldpi/ic_arrow_right_24.xml" value="0.2315" />
         <entry key="..\:/Android Studio/wallet5/app/src/main/res/drawable-ldpi/ic_qr_code_scanner_24.xml" value="0.2315" />
         <entry key="..\:/Android Studio/wallet5/app/src/main/res/drawable-v24/while_background.xml" value="0.2315" />

@@ -146,7 +146,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnBackMenuTranfer"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
@@ -157,16 +157,16 @@
                 android:textColor="@color/purple_700"
                 android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/btnNextToTranfer"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNextToOTP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_weight="1"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="Tiếp Tục"
+                android:layout_weight="1"
                 android:background="@drawable/btn_background2"
+                android:text="Tiếp Tục"
                 android:textAllCaps="false"
                 android:textColor="@color/purple_700"
                 android:textSize="20sp" />
