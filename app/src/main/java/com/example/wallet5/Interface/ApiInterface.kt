@@ -4,11 +4,9 @@ package com.example.wallet5.Interface
 import com.example.wallet5.model.request.Login
 import com.example.wallet5.model.Otp
 import com.example.wallet5.model.request.Bank
+import com.example.wallet5.model.request.PreTranfer
 import com.example.wallet5.model.request.Register
-import com.example.wallet5.model.response.BankResponse
-import com.example.wallet5.model.response.Bank_Connected
-import com.example.wallet5.model.response.LoginResponse
-import com.example.wallet5.model.response.RegisterResponse
+import com.example.wallet5.model.response.*
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -39,9 +37,11 @@ interface ApiInterface {
     @POST("bankUser/list")
     fun postBankUsers(@Header("Authorization") header: String) : Call<Bank_Connected>
 
+//    http://localhost:8080/transfer/pre-transfer
+    @POST("transfer/pre-transfer")
+    fun postPreTranfers(@Body post: PreTranfer, @Header("Authorization") header: String) : Call<PreTranferResponse>
 
 
-//    http://localhost:8080/auth/register
 
-//    http://localhost:8180/realms/WalletLogin/protocol/openid-connect/token
+
 }

@@ -45,6 +45,11 @@ object RetrofitClient {
             .addConverterFactory(GsonConverterFactory.create()).build()
             .create(ApiInterface::class.java)
     }
+    fun postPreTranfer(): ApiInterface {
+        return Retrofit.Builder().baseUrl("http://192.168.54.186:8080/")
+            .addConverterFactory(GsonConverterFactory.create()).build()
+            .create(ApiInterface::class.java)
+    }
 
 
 
