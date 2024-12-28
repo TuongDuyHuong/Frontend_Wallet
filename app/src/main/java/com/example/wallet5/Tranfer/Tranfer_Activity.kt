@@ -1,8 +1,10 @@
-package com.example.wallet5
+package com.example.wallet5.Tranfer
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.wallet5.MainActivity
+import com.example.wallet5.R
 import kotlinx.android.synthetic.main.activity_tranfer.*
 
 class Tranfer_Activity : AppCompatActivity() {

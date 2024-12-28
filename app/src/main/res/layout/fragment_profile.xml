@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment_profile">
+    tools:context=".Fragment.fragment_profile">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -63,7 +63,7 @@
 
         <Button
             android:id="@+id/button5"
-            app:layout_constraintEnd_toStartOf="@+id/button6"
+            app:layout_constraintEnd_toStartOf="@+id/btnLogOut"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/button4"
             app:layout_constraintTop_toTopOf="@+id/button4"
@@ -73,15 +73,15 @@
             tools:layout_editor_absoluteX="173dp"
             tools:layout_editor_absoluteY="213dp" />
 
-        <Button
-            android:id="@+id/button6"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogOut"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/button5"
             app:layout_constraintTop_toTopOf="@+id/button4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="REMOVE"
+            android:text="Đăng Xuất"
             tools:layout_editor_absoluteX="116dp"
             tools:layout_editor_absoluteY="385dp" />
 

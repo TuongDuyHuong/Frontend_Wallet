@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_app"
-    tools:context=".load_layout">
+    tools:context=".Layout.load_layout">
 
     <!-- TODO: Update blank fragment layout -->
     <ProgressBar

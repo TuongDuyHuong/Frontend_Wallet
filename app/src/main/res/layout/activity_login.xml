@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#EFF0FC"
     android:orientation="vertical"
-    tools:context=".Login_Activity">
+    tools:context=".Login.Login_Activity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtEmail"
+        android:id="@+id/edtUserName"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -42,7 +42,7 @@
         android:drawableStart="@drawable/email"
         android:drawablePadding="16dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="Tên Người Dùng"
         android:inputType="textPersonName"
         android:textColor="#3B608C"
         android:textSize="18sp"
@@ -67,7 +67,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/edtUserName" />
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/btnSignIn"

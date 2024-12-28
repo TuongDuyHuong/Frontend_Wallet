@@ -1,10 +1,11 @@
-package com.example.wallet5
+package com.example.wallet5.Layout
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.wallet5.R
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -13,7 +14,7 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [fragment_profile.newInstance] factory method to
+ * Use the [load_layout.newInstance] factory method to
  * create an instance of this fragment.
  */
-class fragment_profile : Fragment(R.layout.fragment_profile)
+class load_layout : Fragment(R.layout.fragment_load_layout)

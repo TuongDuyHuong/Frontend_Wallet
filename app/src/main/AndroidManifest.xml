@@ -19,24 +19,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Wallet5"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Tranferred_Activity"
+            android:name=".Tranfer.Tranfer_Info"
             android:exported="false" />
         <activity
-            android:name=".TranferInfor_Activity"
+            android:name=".Connect_Bank_Activity"
             android:exported="false" />
         <activity
-            android:name=".Tranfer_Activity"
+            android:name=".Form_Bank_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".UserBank_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ExamApi"
+            android:exported="false" />
+        <activity
+            android:name=".Tranfer.Tranferred_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Tranfer.TranferInfor_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Tranfer.Tranfer_Activity"
             android:exported="false" />
         <activity
             android:name=".Recharge_Activity"
             android:exported="false" />
         <activity
-            android:name=".Signup_Activity"
+            android:name=".SignUp.Signup_Activity"
             android:exported="false" />
         <activity
-            android:name=".Login_Activity"
+            android:name=".Login.Login_Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

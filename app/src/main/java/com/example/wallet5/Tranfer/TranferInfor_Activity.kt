@@ -1,4 +1,4 @@
-package com.example.wallet5
+package com.example.wallet5.Tranfer
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,10 +6,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
-import kotlinx.android.synthetic.main.activity_tranfer_infor.*
+import com.example.wallet5.R
 import kotlinx.android.synthetic.main.activity_tranfer_infor.btnBackMenuTranfer
 import kotlinx.android.synthetic.main.activity_tranfer_infor.btnNextToOTP
-import kotlinx.android.synthetic.main.otp_dialog.*
 
 class TranferInfor_Activity : AppCompatActivity() {
     lateinit var dialog : AlertDialog

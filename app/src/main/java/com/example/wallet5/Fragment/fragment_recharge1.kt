@@ -1,10 +1,11 @@
-package com.example.wallet5
+package com.example.wallet5.Fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.wallet5.R
 import kotlinx.android.synthetic.main.fragment_fragment_recharge1.*
 
 // TODO: Rename parameter arguments, choose names that match

@@ -1,9 +1,9 @@
 package com.example.wallet5
 
 //import android.support.v7.app.AppCompatActivity
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.wallet5.Adapter.ViewPagerAdapterMenu
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_main.*
 
