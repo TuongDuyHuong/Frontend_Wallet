@@ -12,8 +12,7 @@ class UserTo_Result_PreTranfer(
     @SerializedName("balance")
     val balance: Double,
     @SerializedName("bank")
-    val bank: Bank_UserTo_Result_Pre,
-    @SerializedName("user")
-    val user: User_UserTo_Result_Pre
+    val bank: Bank_UserTo_Result_Pre
+
 ) {
 }

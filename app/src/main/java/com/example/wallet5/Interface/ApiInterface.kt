@@ -1,21 +1,19 @@
 package com.example.wallet5.Interface
 
 
-import com.example.wallet5.model.request.Login
-import com.example.wallet5.model.Otp
-import com.example.wallet5.model.request.Bank
-import com.example.wallet5.model.request.PreTranfer
-import com.example.wallet5.model.request.Register
+import com.example.wallet5.model.request.*
+import com.example.wallet5.model.response.PreTranfer.OtpResponse
 import com.example.wallet5.model.response.*
 import retrofit2.Call
+import retrofit2.Callback
 import retrofit2.http.*
 
 interface ApiInterface {
 
 
 //    http://localhost:8080/otp/getOtp?numberTo=0377114669
-    @GET("getOtp?numberTo=0377114669")
-    fun getOtps() :Call<List<Otp>>
+    @GET("getOtp")
+    fun getOtps(@Query("numberTo") numberTo:String , @Header("Authorization") header: String) :Call<List<OtpResponse>>
 
 //    http://localhost:8080/bankUser/save
 //    @POST("register")
@@ -41,7 +39,14 @@ interface ApiInterface {
     @POST("transfer/pre-transfer")
     fun postPreTranfers(@Body post: PreTranfer, @Header("Authorization") header: String) : Call<PreTranferResponse>
 
+    @POST("otp/check")
+    fun postCheckOtps(@Query("otp") otp:String, @Header("Authorization") header: String) : Call<CheckOtpResponse>
 
+    @POST("transfer/transfer")
+    fun postTranfers(@Body body: Tranfer, @Header("Authorization") header: String) : Call<TranferResponse>
+
+    @DELETE("bankUser/delete")
+    fun deleteBankUsers(@Query("id") id:Int,@Header("Authorization") header: String ): Call<DeleteBankResponse>
 
 
 }

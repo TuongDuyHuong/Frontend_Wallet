@@ -6,43 +6,37 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
+import com.example.wallet5.Adapter.PagerAdapterTranfer
+import com.example.wallet5.Adapter.ViewPagerAdapter
+import com.example.wallet5.MainActivity
 import com.example.wallet5.R
-import kotlinx.android.synthetic.main.activity_tranfer_infor.btnBackMenuTranfer
-import kotlinx.android.synthetic.main.activity_tranfer_infor.btnNextToOTP
+import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.android.synthetic.main.activity_recharge.*
+import kotlinx.android.synthetic.main.activity_tranfer_infor.*
+
 
 class TranferInfor_Activity : AppCompatActivity() {
-    lateinit var dialog : AlertDialog
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tranfer_infor)
 
-        btnBackMenuTranfer.setOnClickListener {
+        val adapter = PagerAdapterTranfer(supportFragmentManager,lifecycle)
+        pagerMenuTranfer.adapter = adapter
+
+        TabLayoutMediator(tabMenuTrafer, pagerMenuTranfer) {tab, pos->
+            when(pos){
+                0 -> {tab.text= "Ngân Hàng"}
+                else -> {tab.text= "Ví điện tử"}
+            }
+        }.attach()
+
+        btnBackTranfer.setOnClickListener {
             val intent = Intent(this, Tranfer_Activity::class.java)
             startActivity(intent)
         }
-        btnNextToOTP.setOnClickListener {
-            showDialogOTP()
-        }
+
     }
 
-    private fun showDialogOTP() {
-        val build = AlertDialog.Builder(this)
-        val view  = layoutInflater.inflate(R.layout.otp_dialog, null)
-        build.setView(view)
-        val btnCloseDialog= view.findViewById<ImageButton>(R.id.btnCloseDialog)
-        btnCloseDialog.setOnClickListener {
-            dialog.dismiss()
-        }
-        val btnBackTranfer = view.findViewById<Button>(R.id.btnBackTranfer)
-        btnBackTranfer.setOnClickListener { dialog.dismiss() }
-        val btnNextToTranfer = view.findViewById<Button>(R.id.btnNextToTranfer)
-        btnNextToTranfer.setOnClickListener {
-            dialog.dismiss()
-            val intent = Intent(this, Tranferred_Activity::class.java)
-            startActivity(intent)
 
-        }
-        dialog =  build.create()
-        dialog.show()
-    }
 }

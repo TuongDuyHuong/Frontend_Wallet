@@ -10,6 +10,6 @@ class PreTranfer(
     @SerializedName("accountNumber")
     var accountNumber :String,
     @SerializedName("amount")
-    var amount :Int
+    var amount :String
 ) {
 }

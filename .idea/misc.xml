@@ -27,6 +27,7 @@
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/activity_tranferred.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/activity_user_bank.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/background.xml" value="0.25" />
+        <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/delete_bank_dialog.xml" value="0.24895833333333334" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/exam.xml" value="0.24895833333333334" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/form_bank_dialog.xml" value="0.16168478260869565" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment__tranfer__in_wallet.xml" value="0.25" />
@@ -34,10 +35,13 @@
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_endow.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_fragment_recharge1.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_fragment_recharge2.xml" value="0.25" />
+        <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_fragnment__tranfer__inter_bank.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_load_layout.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_menu.xml" value="0.264" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_scanqr.xml" value="0.25" />
+        <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_tranfer_interbank.xml" value="0.2359375" />
+        <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_tranfer_inwallet.xml" value="0.2359375" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/fragment_transaction_history.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/layout_endow_list.xml" value="0.25" />
         <entry key="..\:/Android Studio/wallet3/app/src/main/res/layout/layout_userbank.xml" value="0.25" />

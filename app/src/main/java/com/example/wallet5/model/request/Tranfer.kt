@@ -1,8 +1,12 @@
-package com.example.wallet5.model.response.PreTranfer
+package com.example.wallet5.model.request
 
+import com.example.wallet5.model.response.PreTranfer.UserFrom_Result_PreTranfer
+import com.example.wallet5.model.response.PreTranfer.UserTo_Result_PreTranfer
 import com.google.gson.annotations.SerializedName
 
-class Result_PreTranfer(
+class Tranfer(
+    @SerializedName("otp")
+    val otp :String,
     @SerializedName("userFrom")
     val userFrom: UserFrom_Result_PreTranfer,
     @SerializedName("amount")

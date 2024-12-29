@@ -22,6 +22,8 @@ class Signup_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
+
+
         imgSignIn.setOnClickListener {
             if (edtUserNameSignUp.text.isEmpty() || edtPassWord.text.isEmpty() || edtEmail.text.isEmpty()
                 || edtFirstName.text.isEmpty() || edtLastName.text.isEmpty() || edtPhoneNumber.text.isEmpty() ) {
@@ -37,6 +39,17 @@ class Signup_Activity : AppCompatActivity() {
             startActivity(intent2)
         }
     }
+
+//    private fun saveUserData() {
+//        val sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE)
+//        val editor = sharedPreferences.edit()
+//        editor.putString("username", edtUserNameSignUp.text.toString())
+//        editor.putString("email", edtEmail.text.toString())
+//        editor.putString("phonenumber",edtPhoneNumber.text.toString())
+//        editor.putString("edtpassword",edtPassWord.text.toString())
+//        editor.apply()
+//    }
+
 
     private fun btnRegisterClick() {
         val post= Register(edtUserNameSignUp.text.toString(), edtPassWord.text.toString(), edtEmail.text.toString(),
