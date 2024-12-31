@@ -14,6 +14,7 @@ class ViewPagerAdapterMenu(fragmentManager: FragmentManager, lifecycle: Lifecycl
     override fun createFragment(position: Int): Fragment {
         return when(position) {
             0 -> {
+
                 fragment_menu()
             }
             1 -> {

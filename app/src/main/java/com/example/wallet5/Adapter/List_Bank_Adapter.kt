@@ -32,4 +32,8 @@ class List_Bank_Adapter(val activity: Activity, val listresult:List<Result_Bank>
 
         return rowView
     }
+
+    override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
+        return getView(position,convertView,parent)
+    }
 }

@@ -43,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:textSize="20sp"
+            android:layout_marginStart="8dp"
             android:textColor="@color/black"
             android:text="Số Tiền:" />
 
@@ -64,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:textSize="20sp"
+            android:layout_marginStart="8dp"
             android:textColor="@color/black"
             android:text="Nội dung chuyển tiền:" />
 

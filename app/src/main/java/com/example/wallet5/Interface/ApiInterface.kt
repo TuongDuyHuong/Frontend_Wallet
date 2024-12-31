@@ -48,5 +48,9 @@ interface ApiInterface {
     @DELETE("bankUser/delete")
     fun deleteBankUsers(@Query("id") id:Int,@Header("Authorization") header: String ): Call<DeleteBankResponse>
 
+    @GET("wallet/account")
+    fun getAccounts(@Header("Authorization") header: String) :Call<GetAccountResponse>
 
+    @POST("transfer/recharge")
+    fun postRecharges(@Query("id") id :Int, @Query("amount") amount:String, @Header("Authorization") header: String) : Call<RechargeResponse>
 }

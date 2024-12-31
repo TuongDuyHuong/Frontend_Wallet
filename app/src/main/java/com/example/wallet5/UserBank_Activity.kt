@@ -82,7 +82,7 @@ class UserBank_Activity : AppCompatActivity() {
             override fun onResponse(call: Call<Bank_Connected>, response: Response<Bank_Connected>) {
                 listBankUser = response.body()?.result!!
                 if (listBankUser != null) {
-                    customBankAdapter =List_Bank_Adapter(this@UserBank_Activity  , listBankUser)
+                    customBankAdapter =List_Bank_Adapter(this@UserBank_Activity, listBankUser)
                     val lvBank = findViewById<ListView>(R.id.lvBank)
                     lvBank.adapter = customBankAdapter
                 }

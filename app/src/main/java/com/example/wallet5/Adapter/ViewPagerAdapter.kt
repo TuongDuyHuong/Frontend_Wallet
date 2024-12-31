@@ -15,10 +15,10 @@ class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle):F
     override fun createFragment(position: Int): Fragment {
         return when(position) {
             0 ->{
-                fragmentmenu1()
+                fragmentmenu2()
             }
             else ->{
-                fragmentmenu2()
+                fragmentmenu1()
             }
         }
     }
