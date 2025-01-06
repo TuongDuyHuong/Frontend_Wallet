@@ -23,7 +23,7 @@
             android:layout_marginTop="8dp"
 
             android:textColor="@color/black"
-            android:text="Rút tiền từ" />
+            android:text="Rút tiền đến" />
 
         <Spinner
             android:id="@+id/spBank"

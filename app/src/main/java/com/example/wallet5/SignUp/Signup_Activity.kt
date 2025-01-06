@@ -56,12 +56,16 @@ class Signup_Activity : AppCompatActivity() {
         edtFirstName.text.toString(), edtLastName.text.toString(), edtPhoneNumber.text.toString())
         RetrofitClient.postRegister().postRegisters(post).enqueue(object: Callback<RegisterResponse> {
             override fun onResponse(call: Call<RegisterResponse>, response: Response<RegisterResponse>) {
-                if (response.body()?.code == 409) {
+                if (response.body()?.code != 201) {
                     Toast.makeText(applicationContext, "Ban da nhap sai", Toast.LENGTH_SHORT ).show()
 
                 }
-                val intent = Intent(applicationContext, Login_Activity::class.java)
-                startActivity(intent)
+                else {
+                    Toast.makeText(applicationContext, "Thành công", Toast.LENGTH_SHORT ).show()
+                    val intent = Intent(applicationContext, Login_Activity::class.java)
+                    startActivity(intent)
+                }
+
             }
 
             override fun onFailure(call: Call<RegisterResponse>, t: Throwable) {

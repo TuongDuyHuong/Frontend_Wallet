@@ -2,6 +2,7 @@ package com.example.wallet5.Fragment
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.fragment.app.Fragment
 import com.example.wallet5.Adapter.List_Bank_Adapter
 import com.example.wallet5.R
 import com.example.wallet5.Recharge_Activity
+import com.example.wallet5.Recharged_Activity
 import com.example.wallet5.RetrofitClient.RetrofitClient
 import com.example.wallet5.model.Result_Bank
 import com.example.wallet5.model.response.Bank_Connected
@@ -70,11 +72,8 @@ private const val ARG_PARAM2 = "param2"
         }
         addLists()
         setupSpinner()
-        val btnRecharge = view?.findViewById<Button>(R.id.btnRecharge)
-        btnRecharge?.setOnClickListener {
 
-            recharge(1)
-        }
+
     }
 
     private fun setupSpinner() {
@@ -82,7 +81,14 @@ private const val ARG_PARAM2 = "param2"
         spBank_Recharge?.onItemSelectedListener = object :AdapterView.OnItemSelectedListener{
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
 
-                Toast.makeText(context, "Ban da click"+listBankUser[p2].bankName, Toast.LENGTH_SHORT).show()
+                val btnRecharge = view?.findViewById<Button>(R.id.btnRecharge)
+                btnRecharge?.setOnClickListener {
+                    recharge(p2)
+                    val edtAmount = view?.findViewById<EditText>(R.id.edtAmount)
+                    edtAmount?.setText("")
+                    edtAmount?.requestFocus()
+
+                }
 
 
             }
@@ -104,7 +110,9 @@ private const val ARG_PARAM2 = "param2"
                 response: Response<RechargeResponse>,
             ) {
                 if(response.body()?.code==200) {
-                    Toast.makeText(context, "Thành Công", Toast.LENGTH_SHORT).show()
+                    val i = Intent(context, Recharged_Activity::class.java)
+                    i.putExtra("amount", amount)
+                    startActivity(i)
                 }
                 else{
                     Toast.makeText(context, "Bạn đã nhập sai, mời nhập lại", Toast.LENGTH_SHORT).show()

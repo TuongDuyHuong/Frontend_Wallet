@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/txtCodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbarSize="24sp"
+        android:textColor="@color/black"
+        android:text="BIDV" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scrollbarSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"
+        android:text=" - " />
+
+    <TextView
+        android:id="@+id/txtNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="24sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black"
+        android:text="Ngân hàng TMCP Đầu tư và Phát triển Việt Nam (BIDV)" />
+</LinearLayout>

@@ -7,8 +7,10 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import com.example.wallet5.Adapter.CustomAdapterSpBank
 import com.example.wallet5.Adapter.List_Bank_Adapter
 import com.example.wallet5.RetrofitClient.RetrofitClient
 import com.example.wallet5.model.Result_Bank
@@ -33,7 +35,6 @@ class UserBank_Activity : AppCompatActivity() {
         setContentView(R.layout.activity_user_bank)
         btnAddBank.setOnClickListener{
             showDialogBank()
-
 
         }
         addList()
@@ -109,7 +110,7 @@ class UserBank_Activity : AppCompatActivity() {
         dialog.show()
         val btnBackTranfers = view.findViewById<Button>(R.id.btnBackTranfer)
         btnBackTranfers.setOnClickListener { dialog.dismiss() }
-        val btnNextToTranfer = view.findViewById<Button>(R.id.btnNextToTranfer)
+        val btnNextToTranfer = view.findViewById<Button>(R.id.btnNextToTranfers)
         btnNextToTranfer.setOnClickListener {
             val edtNumberBank = view.findViewById<EditText>(R.id.edtNumberBank)
             val edtBank = view.findViewById<EditText>(R.id.edtBank)
@@ -145,4 +146,8 @@ class UserBank_Activity : AppCompatActivity() {
         }
 
     }
+
+
+
+
 }

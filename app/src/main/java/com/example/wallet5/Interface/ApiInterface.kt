@@ -53,4 +53,10 @@ interface ApiInterface {
 
     @POST("transfer/recharge")
     fun postRecharges(@Query("id") id :Int, @Query("amount") amount:String, @Header("Authorization") header: String) : Call<RechargeResponse>
+
+    @POST("transfer/pre-transfer")
+    fun postPreWallets(@Body post: PreTranferWallet, @Header("Authorization") header: String) : Call<PreResponseWallet>
+
+    @POST("transfer/transfer")
+    fun postTranferWallets(@Body body: TranferWallet, @Header("Authorization") header: String) : Call<TranferResponse>
 }

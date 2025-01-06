@@ -1,5 +1,9 @@
 package com.example.wallet5.Fragment
 
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +14,7 @@ import com.budiyev.android.codescanner.CodeScanner
 import com.budiyev.android.codescanner.CodeScannerView
 import com.budiyev.android.codescanner.DecodeCallback
 import com.example.wallet5.R
+import com.example.wallet5.Tranfer.TranferInfor_Activity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,12 +40,29 @@ class fragment_scanqr : Fragment(R.layout.fragment_scanqr) {
         codeScanner = CodeScanner(activity, scannerView)
         codeScanner.decodeCallback = DecodeCallback {
             activity.runOnUiThread {
-                Toast.makeText(activity, it.text, Toast.LENGTH_LONG).show()
+                val qrData = it.text
+                val uri = Uri.parse(qrData)
+                val bankAccount = uri.host.toString()
+                val type = uri.getQueryParameter("type").toString()
+                val content = uri.getQueryParameter("content").toString()
+                context?.let { it1 -> saveInforQr(it1, bankAccount,type,content) }
+                val i = Intent(context,TranferInfor_Activity::class.java )
+
+                startActivity(i)
+
             }
         }
         scannerView.setOnClickListener {
             codeScanner.startPreview()
         }
+    }
+    private fun saveInforQr(context: Context, bankAccount:String, type:String,content:String  ) {
+        val sharedPreferences: SharedPreferences = context.getSharedPreferences("inforQR", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putString("bankAccount", bankAccount)
+        editor.putString("type", type)
+        editor.putString("content", content)
+        editor.apply()
     }
 
     override fun onResume() {

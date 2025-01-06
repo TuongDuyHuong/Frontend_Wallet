@@ -1,5 +1,6 @@
 package com.example.wallet5.model.response.PreTranfer
 
+import com.example.wallet5.model.response.UserToWallet
 import com.google.gson.annotations.SerializedName
 
 class Result_PreTranfer(
@@ -17,5 +18,6 @@ class Result_PreTranfer(
     val type: Int,
     @SerializedName("userTo")
     val userTo: UserTo_Result_PreTranfer
+
 ) {
 }

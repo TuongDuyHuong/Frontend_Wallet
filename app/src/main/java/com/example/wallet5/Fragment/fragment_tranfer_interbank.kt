@@ -56,7 +56,7 @@ class fragment_tranfer_interbank : Fragment(R.layout.fragment_tranfer_interbank)
 
     private fun callApiPreTranfer() {
 
-        val type = "0"
+        val type = "1"
         val bankCode = edtNameBank.text.toString()
         val accountNumber = edtAccountBank.text.toString()
         val amount = edtAmount.text.toString()
@@ -97,6 +97,8 @@ class fragment_tranfer_interbank : Fragment(R.layout.fragment_tranfer_interbank)
         val btnNextToTranfer = view.findViewById<Button>(R.id.btnNextToTranfer)
         btnNextToTranfer.setOnClickListener {
             val edtOtp = view.findViewById<EditText>(R.id.edtOTP)
+            if (edtOtp.text.toString()==null)
+                Toast.makeText(context, "Mời bạn nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show()
             otp = edtOtp.text.toString()
             val token ="Bearer "+ context?.let { it1 -> getAccessToken(it1).toString() }
             RetrofitClient.postCheckOtp().postCheckOtps(otp,token).enqueue(object: Callback<CheckOtpResponse> {
@@ -142,7 +144,7 @@ class fragment_tranfer_interbank : Fragment(R.layout.fragment_tranfer_interbank)
                     val bundle = Bundle()
                     bundle.putString("amount", resultPreTranfer.amount.toString())
                     bundle.putString("nameto", resultPreTranfer.nameTo)
-                    bundle.putString("numberaccount", resultPreTranfer.userTo.numberAccount)
+                    bundle.putString("numberaccount", resultPreTranfer.userTo?.numberAccount)
                     bundle.putString("contenttranfer", edtMess?.text.toString())
                     i.putExtras(bundle)
 

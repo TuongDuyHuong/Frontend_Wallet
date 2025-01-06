@@ -52,24 +52,24 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnUserQr"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Add Friends"
+            android:text="QR của tôi"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btnexam"
             app:layout_constraintEnd_toStartOf="@+id/btnLogOut"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toTopOf="@+id/button4"
+            app:layout_constraintStart_toEndOf="@+id/btnUserQr"
+            app:layout_constraintTop_toTopOf="@+id/btnUserQr"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="MESSAGE"
+            android:text="Nhắn tin"
             tools:layout_editor_absoluteX="173dp"
             tools:layout_editor_absoluteY="213dp" />
 
@@ -77,8 +77,8 @@
             android:id="@+id/btnLogOut"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/button5"
-            app:layout_constraintTop_toTopOf="@+id/button4"
+            app:layout_constraintStart_toEndOf="@+id/btnexam"
+            app:layout_constraintTop_toTopOf="@+id/btnUserQr"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Đăng Xuất"
@@ -97,7 +97,7 @@
             app:cardElevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button5">
+            app:layout_constraintTop_toBottomOf="@+id/btnexam">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"

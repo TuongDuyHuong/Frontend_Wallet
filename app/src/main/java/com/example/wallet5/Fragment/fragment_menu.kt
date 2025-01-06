@@ -34,13 +34,14 @@ class fragment_menu : Fragment(R.layout.fragment_menu) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        getAccounts()
+         getAccounts()
         txtBalanceWallet.text = context?.let { getAccountBalance(it) }
         txtNameUser.text = context?.let { getNameUser(it) }
 
         btnMoney.setOnClickListener{
             val intent1 = Intent(context, Recharge_Activity::class.java)
             startActivity(intent1)
+
 
         }
         btnTranfer.setOnClickListener{

@@ -21,6 +21,7 @@ class TranferInfor_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tranfer_infor)
 
+
         val adapter = PagerAdapterTranfer(supportFragmentManager,lifecycle)
         pagerMenuTranfer.adapter = adapter
 

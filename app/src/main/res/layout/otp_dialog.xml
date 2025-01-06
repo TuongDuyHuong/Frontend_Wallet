@@ -11,7 +11,7 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:text="Xác thực OTP"
         android:textColor="@color/purple_700"
         android:textSize="20sp"
@@ -80,5 +80,17 @@
             android:textColor="@color/purple_700"
             android:textSize="20sp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuộc gọi đang được thực hiện, \nVui lòng chờ trong giây lát..."
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
