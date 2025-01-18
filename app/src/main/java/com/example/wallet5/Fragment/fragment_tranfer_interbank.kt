@@ -49,8 +49,6 @@ class fragment_tranfer_interbank : Fragment(R.layout.fragment_tranfer_interbank)
         val btnNextToOTP = view.findViewById<Button>(R.id.btnNextToOTP)
         btnNextToOTP.setOnClickListener {
             callApiPreTranfer()
-
-
         }
     }
 

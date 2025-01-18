@@ -13,6 +13,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.wallet5.Fragment.fragment_profile
+import com.example.wallet5.Fragment.fragment_scanqr
 import com.example.wallet5.RetrofitClient.RetrofitClient
 import com.example.wallet5.model.response.GetAccountResponse
 import com.google.zxing.BarcodeFormat
@@ -34,8 +35,8 @@ class User_QR_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_qr)
 
-        btnBack.setOnClickListener {
-            val i = Intent(this, fragment_profile::class.java)
+        btnBackss.setOnClickListener {
+            val i = Intent(this, MainActivity::class.java)
             startActivity(i)
         }
 

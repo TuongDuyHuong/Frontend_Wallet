@@ -62,8 +62,8 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btn50d"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn50ds"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
@@ -71,8 +71,8 @@
                     android:background="@drawable/while_background"
                     android:text="50.000Đ" />
 
-                <Button
-                    android:id="@+id/btn500d"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn500ds"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
@@ -86,8 +86,8 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btn100d"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn100ds"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
@@ -95,8 +95,8 @@
                     android:background="@drawable/while_background"
                     android:text="100.000Đ" />
 
-                <Button
-                    android:id="@+id/btn1000d"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn1000ds"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
@@ -111,8 +111,8 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btn200d"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn200ds"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
@@ -120,8 +120,8 @@
 
                     android:text="200.000đ" />
 
-                <Button
-                    android:id="@+id/btn2000d"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn2000ds"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
@@ -135,7 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnRecharge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -1,5 +1,6 @@
 package com.example.wallet5.Fragment
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
@@ -44,35 +45,41 @@ private const val ARG_PARAM2 = "param2"
     lateinit var listBankUser: List<Result_Bank>
     lateinit var bankConnected: Bank_Connected
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val btn50d = view.findViewById<Button>(R.id.btn50d)
+        val btn50d = view.findViewById<Button>(R.id.btn50ds)
         btn50d.setOnClickListener {
+            val edtMoney = view.findViewById<EditText>(R.id.edtAmount)
             edtMoney.setText("50000")
         }
-        val btn100d = view.findViewById<Button>(R.id.btn100d)
+        val btn100d = view.findViewById<Button>(R.id.btn100ds)
         btn100d.setOnClickListener {
+            val edtMoney = view.findViewById<EditText>(R.id.edtAmount)
             edtMoney.setText("100000")
         }
-        val btn200d = view.findViewById<Button>(R.id.btn200d)
+        val btn200d = view.findViewById<Button>(R.id.btn200ds)
         btn200d.setOnClickListener {
+            val edtMoney = view.findViewById<EditText>(R.id.edtAmount)
             edtMoney.setText("200000")
         }
-        val btn500d = view.findViewById<Button>(R.id.btn500d)
+        val btn500d = view.findViewById<Button>(R.id.btn500ds)
         btn500d.setOnClickListener {
+            val edtMoney = view.findViewById<EditText>(R.id.edtAmount)
             edtMoney.setText("500000")
         }
-        val btn1000d = view.findViewById<Button>(R.id.btn1000d)
+        val btn1000d = view.findViewById<Button>(R.id.btn1000ds)
         btn1000d.setOnClickListener {
+            val edtMoney = view.findViewById<EditText>(R.id.edtAmount)
             edtMoney.setText("1000000")
         }
-        val btn2000d = view.findViewById<Button>(R.id.btn2000d)
+        val btn2000d = view.findViewById<Button>(R.id.btn2000ds)
         btn2000d.setOnClickListener {
+            val edtMoney = view.findViewById<EditText>(R.id.edtAmount)
             edtMoney.setText("2000000")
         }
         addLists()
         setupSpinner()
-
 
     }
 
@@ -87,10 +94,7 @@ private const val ARG_PARAM2 = "param2"
                     val edtAmount = view?.findViewById<EditText>(R.id.edtAmount)
                     edtAmount?.setText("")
                     edtAmount?.requestFocus()
-
                 }
-
-
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {

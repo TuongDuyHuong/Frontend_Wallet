@@ -8,6 +8,7 @@ object RetrofitClient {
     //    192.168.1.11 Wifi phong
 //        192.168.54.186 Wifi đt
 //        192.168.1.9 Wifi nha
+
     fun postBankUser(): ApiInterface {
         return Retrofit.Builder().baseUrl("http://192.168.1.17:8080/")
             .addConverterFactory(GsonConverterFactory.create()).build()

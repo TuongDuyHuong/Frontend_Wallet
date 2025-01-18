@@ -62,10 +62,7 @@ class fragment_tranfer_inwallet : Fragment(R.layout.fragment_tranfer_inwallet) {
         val btnNextToOTP = view.findViewById<Button>(R.id.btnNextToOTPWallet)
         btnNextToOTP.setOnClickListener {
             callApiPreTranfer()
-            val edtAccountBank = view.findViewById<EditText>(R.id.edtAccountBankWallet)
-            val edtContentTranfer = view.findViewById<EditText>(R.id.edtContentTranferWallet)
-            edtAccountBank.setText("")
-            edtContentTranfer.setText("")
+
         }
 
     }

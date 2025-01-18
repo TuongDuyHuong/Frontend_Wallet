@@ -1,10 +1,12 @@
 package com.example.wallet5.Tranfer
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import com.example.wallet5.MainActivity
 import com.example.wallet5.R
@@ -14,11 +16,20 @@ import kotlinx.android.synthetic.main.activity_tranferred.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.text.SimpleDateFormat
+import java.util.*
 
 class Tranferred_Activity : AppCompatActivity() {
+    @SuppressLint("SimpleDateFormat")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tranferred)
+        val cal = Calendar.getInstance()
+        val date = cal.time
+
+        val time = SimpleDateFormat("hh:mm:ss a - dd/MM/yyyy")
+        val txtTimeOfTranfer = findViewById<TextView>(R.id.txtTimeOfTranfer)
+        txtTimeOfTranfer.text = time.format(date)
 
         val i = intent
         val bundle = i.extras
